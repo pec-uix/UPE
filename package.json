@@ -1,0 +1,30 @@
+{
+  "name": "upe-site",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "deploy": "nuxt generate && firebase deploy --only hosting",
+    "images:webp": "node scripts/convert-used-images-to-webp.mjs",
+    "favicon:gen": "node scripts/generate-favicon.mjs"
+  },
+  "dependencies": {
+    "embla-carousel-autoplay": "^9.0.0-rc02",
+    "embla-carousel-ssr": "^9.0.0-rc02",
+    "embla-carousel-vue": "^9.0.0-rc02",
+    "nuxt": "^4.4.4",
+    "vue": "^3.5.32",
+    "vue-router": "^5.0.4"
+  },
+  "devDependencies": {
+    "@mdi/js": "^7.4.47",
+    "@types/node": "^25.9.1",
+    "sharp": "^0.34.5",
+    "vite-plugin-vuetify": "^2.1.3",
+    "vuetify": "^4.0.6"
+  }
+}
