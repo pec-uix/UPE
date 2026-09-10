@@ -50,7 +50,7 @@
           <p class="mb-6" v-html="processedBody"></p>
           <v-img
             v-if="article.image"
-            :src="article.image"
+            :src="assetPath(article.image)"
             :alt="article.title"
             class="mb-6 rounded-lg"
             width="100%"
@@ -62,6 +62,8 @@
 </template>
 <script setup>
 import { mdiArrowLeft } from "@mdi/js";
+
+const assetPath = useAssetPath();
 
 const newsList = [
   {

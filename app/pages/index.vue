@@ -24,7 +24,7 @@
       class="position-relative pa-0 overflow-hidden"
       ><img
         class="position-absolute w-100 h-100 object-cover"
-        src="/images/hero-aerial.webp"
+        :src="assetPath('/images/hero-aerial.webp')"
         alt="統流開發物流園區空拍圖"
       />
 
@@ -71,7 +71,7 @@
             >
               <v-img
                 class="rounded-lg transition-swing"
-                src="/images/about-us.webp"
+                :src="assetPath('/images/about-us.webp')"
                 :aspect-ratio="16 / 9"
                 cover
                 :style="{ transform: isHovering ? 'scale(1.05)' : 'scale(1)' }"
@@ -149,7 +149,7 @@
             >
               <v-img
                 class="rounded-lg transition-swing"
-                src="/images/core-capabilities.webp"
+                :src="assetPath('/images/core-capabilities.webp')"
                 :aspect-ratio="16 / 9"
                 cover
                 :style="{ transform: isHovering ? 'scale(1.05)' : 'scale(1)' }"
@@ -199,7 +199,7 @@
             >
               <v-img
                 class="rounded-lg transition-swing"
-                src="/images/future-development.webp"
+                :src="assetPath('/images/future-development.webp')"
                 :aspect-ratio="16 / 9"
                 cover
                 :style="{ transform: isHovering ? 'scale(1.05)' : 'scale(1)' }"
@@ -444,7 +444,7 @@
               <v-sheet color="#edf2f7">
                 <v-img
                   class="rounded-lg"
-                  :src="park.images[0]"
+                  :src="assetPath(park.images[0])"
                   :alt="park.name"
                   :aspect-ratio="16 / 9"
                   cover
@@ -837,7 +837,7 @@
                   <div class="d-flex flex-column ga-3">
                     <v-img
                       class="rounded-lg"
-                      :src="facility.src"
+                      :src="assetPath(facility.src)"
                       alt=""
                       :aspect-ratio="485 / 354"
                       cover
@@ -961,6 +961,8 @@ import { SITE_NAME, SITE_DESCRIPTION } from "~/data/site";
 import useEmblaCarousel from "embla-carousel-vue";
 import { useDisplay } from "vuetify";
 import Autoplay from "embla-carousel-autoplay";
+
+const assetPath = useAssetPath();
 
 function openContactForm() {
   if (import.meta.client) {

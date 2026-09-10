@@ -15,7 +15,7 @@
             @click="handleLogoClick"
           >
             <img
-              src="/images/logo.webp"
+              :src="assetPath('/images/logo.webp')"
               alt="統流開發 UPE"
               class="logo-img mr-2"
             />
@@ -97,6 +97,7 @@
 import { mdiClose } from "@mdi/js";
 const router = useRouter();
 const route = useRoute();
+const assetPath = useAssetPath();
 
 const drawer = ref(false);
 const pendingAnchor = useState("pendingAnchor", () => "");
