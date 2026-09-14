@@ -12,7 +12,7 @@
           </div>
         </div>
         <p class="text-body-large text-neutral mt-8 careers-intro">
-          歡迎了解統流開發的實習機會、薪資福利與最新職缺資訊。
+          歡迎了解統流開發的實習機會、福利制度與最新職缺資訊。
         </p>
       </v-container>
     </section>
@@ -55,7 +55,7 @@
           <v-col cols="12" md="4">
             <div class="section-index text-primary font-weight-bold mb-2">02</div>
             <h2 class="text-headline-small font-weight-black mb-4">
-              薪資福利
+              福利制度
             </h2>
             <div class="text-subtitle-1 text-secondary font-weight-bold mb-6">
               員工福利
@@ -126,17 +126,17 @@ const benefits = [
 useSeoMeta({
   title: "招募專區 | 統流開發股份有限公司",
   description:
-    "歡迎了解統流開發股份有限公司的實習機會、薪資福利與最新職缺資訊。",
+    "歡迎了解統流開發股份有限公司的實習機會、福利制度與最新職缺資訊。",
   ogType: "website",
   ogSiteName: "統流開發股份有限公司",
   ogLocale: "zh_TW",
   ogTitle: "招募專區 | 統流開發股份有限公司",
   ogDescription:
-    "歡迎了解統流開發股份有限公司的實習機會、薪資福利與最新職缺資訊。",
+    "歡迎了解統流開發股份有限公司的實習機會、福利制度與最新職缺資訊。",
   twitterCard: "summary_large_image",
   twitterTitle: "招募專區 | 統流開發股份有限公司",
   twitterDescription:
-    "歡迎了解統流開發股份有限公司的實習機會、薪資福利與最新職缺資訊。",
+    "歡迎了解統流開發股份有限公司的實習機會、福利制度與最新職缺資訊。",
 });
 
 useHead({
